@@ -4,6 +4,7 @@
 #import "AppboyKit.h"
 #import "ABKUser.h"
 #import "AppboyReactUtils.h"
+#import "ABKModalFeedbackViewController.h"
 
 @implementation RCTConvert (AppboySubscriptionType)
 RCT_ENUM_CONVERTER(ABKNotificationSubscriptionType,
