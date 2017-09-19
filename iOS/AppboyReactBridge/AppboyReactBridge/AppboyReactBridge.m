@@ -289,7 +289,7 @@ RCT_EXPORT_METHOD(getUnreadCardCountForCategories:(NSString *)category callback:
 
 RCT_EXPORT_METHOD(launchFeedback) {
   RCTLogInfo(@"launchFeedback called");
-  ABKFeedViewControllerModalContext *feedbackModal = [[ABKFeedViewControllerModalContext alloc] init];
+  ABKModalFeedbackViewController *feedbackModal = [[ABKModalFeedbackViewController alloc] init];
   UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
   UIViewController *mainViewController = keyWindow.rootViewController;
   [mainViewController presentViewController:feedbackModal animated:YES completion:nil];
